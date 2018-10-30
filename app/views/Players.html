@@ -1,0 +1,33 @@
+@()
+
+@main("Welcome to Play") {
+  <h1>Player Stats Selection</h1>
+
+  <!-- here is where we will autofill  teams for the sport-->
+  <select name="Teams">
+		<option>AutoFill</option>
+		<option>autocomplete</option>
+	</select>
+<!-- Here is where we will auto players based on the team selected-->
+  <select name="Players">
+    <option>AutoFill</option>
+		<option>autocomplete</option>
+	</select>
+
+
+<body>Stats Selection: <br/>
+<input type="checkbox" name="FG" id="FG"
+   value="yes" checked="checked">FG%<br />
+<input type="checkbox" name="Assits" id="Assits"
+     value="yes" checked="checked">Assits<br />
+<input type="checkbox" name="Wins" id="Wins"
+       value="yes" checked="checked">Wins<br />
+<input type="checkbox" name="Loses" id="Loses"
+               value="yes" checked="checked">Loses<br />
+<br/><br/>
+<input type="submit" name="submit" id="submit"
+  value="Submit">
+
+</body>
+
+}

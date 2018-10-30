@@ -22,7 +22,7 @@ import play.mvc.Http.Context.Implicit._
 import play.data._
 import play.core.j.PlayFormsMagicForJava._
 
-object index extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,_root_.play.twirl.api.Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with _root_.play.twirl.api.Template0[play.twirl.api.HtmlFormat.Appendable] {
+object Sports extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,_root_.play.twirl.api.Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with _root_.play.twirl.api.Template0[play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
   def apply/*1.2*/():play.twirl.api.HtmlFormat.Appendable = {
@@ -33,16 +33,22 @@ object index extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.Html
 Seq[Any](format.raw/*1.4*/("""
 
 """),_display_(/*3.2*/main("Welcome to Play")/*3.25*/ {_display_(Seq[Any](format.raw/*3.27*/("""
-  """),format.raw/*4.3*/("""<h1>Spots Stats</h1>
+    """),format.raw/*4.5*/("""<!-- Here is where we will auto the name of the sport League-->
+  <h1>Sport Stats</h1>
 <body>
-  Sports: <br/>
+
+
+
   <div class="nav">
-  <a href="NFL.scala.html"><img src= "NFL.gif" height="65" width="85" alt="NFL"></a>
-  <a href="NBA.scala.html"><img src= "NBA.gif" height="65" width="85" alt="NBA"></a>
-  <a href="NHL.scala.html"><img src= "NHL.gif" height="65" width="85" alt="NHL"></a><br>
+  <a href="Players.scala.html"></a>
+  <a href="Teams.scala.html"></a><br>
   </div>
+
+
 </body>
-""")))}),format.raw/*13.2*/("""
+
+
+""")))}),format.raw/*19.2*/("""
 """))
       }
     }
@@ -60,10 +66,10 @@ Seq[Any](format.raw/*1.4*/("""
               /*
                   -- GENERATED --
                   DATE: Sun Oct 28 23:42:46 EDT 2018
-                  SOURCE: C:/Users/super/Google Drive/PSU/Semester 7/IST 411/playtest411/app/views/index.scala.html
-                  HASH: 559d29111fc4b9fd14e699f051c2870f1834e21b
-                  MATRIX: 941->1|1037->3|1067->8|1098->31|1137->33|1167->37|1547->387
-                  LINES: 28->1|33->1|35->3|35->3|35->3|36->4|45->13
+                  SOURCE: C:/Users/super/Google Drive/PSU/Semester 7/IST 411/playtest411/app/views/Sports.scala.html
+                  HASH: ab7cba910e67a5fbfa948a0ae0b89837a3572fe8
+                  MATRIX: 942->1|1038->3|1068->8|1099->31|1138->33|1170->39|1428->267
+                  LINES: 28->1|33->1|35->3|35->3|35->3|36->4|51->19
                   -- GENERATED --
               */
           

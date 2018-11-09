@@ -1,6 +1,9 @@
 package controllers;
 
+import models.player;
+import models.team;
 import play.mvc.*;
+import views.html.index;
 
 /**
  * This controller contains an action to handle HTTP requests

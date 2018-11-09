@@ -1,0 +1,10 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/nicholas/Google Drive/PSU/Semester 7/IST 411/playtest411/app/models/player.java:10:1: <identifier> expected[0m
+[0m[[0m[31merror[0m] [0m[0m        this.int = int;[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/nicholas/Google Drive/PSU/Semester 7/IST 411/playtest411/app/models/player.java:10:1: not a statement[0m
+[0m[[0m[31merror[0m] [0m[0m        this.int = int;[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/nicholas/Google Drive/PSU/Semester 7/IST 411/playtest411/app/models/player.java:10:1: illegal start of expression[0m
+[0m[[0m[31merror[0m] [0m[0m        this.int = int;[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/nicholas/Google Drive/PSU/Semester 7/IST 411/playtest411/app/models/player.java:10:1: ';' expected[0m
+[0m[[0m[31merror[0m] [0m[0m        this.int = int;[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/nicholas/Google Drive/PSU/Semester 7/IST 411/playtest411/app/models/team.java:9:1: invalid method declaration; return type required[0m
+[0m[[0m[31merror[0m] [0m[0m    public player(int id, String teamName, String city, String sport) {[0m

@@ -1,15 +1,23 @@
 package models;
 
-public class player {
-    int id;
-    String firstName;
-    String lastName;
-    int age;
+import javax.persistence.*;
 
-    public player(int id, String firstName, String lastName, int age) {
-        this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.age = age;
+@Entity
+public class player {
+
+    @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
+    public Long id;
+    public String firstName;
+    public String lastName;
+    public int age;
+
+    @Override
+    public String toString() {
+        return "player{" +
+                "first name='" + firstName + '\'' +
+                ", last name='" + lastName + '\'' +
+                ", age='" + age + '\'' +
+                '}';
     }
 }

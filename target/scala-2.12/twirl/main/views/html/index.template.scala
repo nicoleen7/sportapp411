@@ -32,10 +32,10 @@ object index extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.Html
 
 Seq[Any](format.raw/*1.4*/("""
 
-"""),_display_(/*3.2*/main("Lynx compliance test")/*3.30*/ {_display_(Seq[Any](format.raw/*3.32*/("""
+"""),_display_(/*3.2*/main("Sport App 411")/*3.23*/ {_display_(Seq[Any](format.raw/*3.25*/("""
     """),format.raw/*4.5*/("""<div class="container">
         <div class="jumbotron">
-            <h3><i class="glyphicon glyphicon-book"></i> Book Store App :</h3>
+            <h3>Sports App</h3>
             <button data-toggle="modal" data-target="#squarespaceModal" class="btn btn-primary">
                 <i class="glyphicon glyphicon-plus"></i>Add new</button>
         </div>
@@ -43,12 +43,9 @@ Seq[Any](format.raw/*1.4*/("""
         <table align="center" id="example" class="table table-striped table-bordered table-hover" cellspacing="0" width="80%">
             <thead>
                 <tr>
-                    <th>Id</th>
-                    <th>Title</th>
-                    <th>Author</th>
-                    <th>Page</th>
-                    <th>Cover</th>
-                    <th>Action</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
                 </tr>
             </thead>
             <tbody id="tbody">
@@ -56,21 +53,17 @@ Seq[Any](format.raw/*1.4*/("""
             </tbody>
             <tfoot>
                 <tr>
-                    <th>Id</th>
-                    <th>Title</th>
-                    <th>Author</th>
-                    <th>Page</th>
-                    <th>Cover</th>
-                    <th>Action</th>
-
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
                 </tr>
             </tfoot>
         </table>
     </div>
 
         <!-- line modal -->
-    """),format.raw/*40.29*/("""
-    """),format.raw/*41.5*/("""<div class="modal fade" id="squarespaceModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    """),format.raw/*33.29*/("""
+    """),format.raw/*34.5*/("""<div class="modal fade" id="squarespaceModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -78,7 +71,7 @@ Seq[Any](format.raw/*1.4*/("""
                         ×</span><span class="sr-only">Close</span></button>
                     <h3 class="modal-title" id="lineModalLabel">Add to the database</h3>
                 </div>
-                <form method="POST" action=""""),_display_(/*49.46*/routes/*49.52*/.HomeController.addPlayer()),format.raw/*49.79*/("""" id="formedit" enctype="multipart/form-data">
+                <form method="POST" action=""""),_display_(/*42.46*/routes/*42.52*/.HomeController.addPlayer()),format.raw/*42.79*/("""" id="formedit" enctype="multipart/form-data">
 
                     <div class="modal-body">
                             <!-- content goes here -->
@@ -112,8 +105,8 @@ Seq[Any](format.raw/*1.4*/("""
             </div>
         </div>
     </div>
-    """),format.raw/*83.21*/("""
-    """),format.raw/*84.5*/("""<div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+    """),format.raw/*76.21*/("""
+    """),format.raw/*77.5*/("""<div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -140,8 +133,8 @@ Seq[Any](format.raw/*1.4*/("""
         </div>
             <!-- /.modal-dialog -->
     </div>
-    """),format.raw/*111.27*/("""
-    """),format.raw/*112.5*/("""<div id="modalAffich" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    """),format.raw/*104.27*/("""
+    """),format.raw/*105.5*/("""<div id="modalAffich" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-body">
@@ -168,11 +161,11 @@ Seq[Any](format.raw/*1.4*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Sun Nov 11 17:19:56 EST 2018
-                  SOURCE: /Users/nicholas/Google Drive/PSU/Semester 7/IST 411/playtest411/app/views/index.scala.html
-                  HASH: fe2ff19fe0487d4bbcbff21bf970f6dd92ff5fc8
-                  MATRIX: 941->1|1037->3|1067->8|1103->36|1142->38|1174->44|2385->1251|2418->1257|3030->1842|3045->1848|3093->1875|4998->3768|5031->3774|6497->5233|6531->5239
-                  LINES: 28->1|33->1|35->3|35->3|35->3|36->4|72->40|73->41|81->49|81->49|81->49|115->83|116->84|143->111|144->112
+                  DATE: Tue Nov 13 17:06:52 EST 2018
+                  SOURCE: C:/Users/super/Google Drive/PSU/Semester 7/IST 411/playtest411/app/views/index.scala.html
+                  HASH: 85a0c7767ee606386f8688ffe167689f515f862b
+                  MATRIX: 941->1|1037->3|1067->8|1096->29|1135->31|1167->37|2131->997|2164->1003|2776->1588|2791->1594|2839->1621|4744->3514|4777->3520|6243->4979|6277->4985
+                  LINES: 28->1|33->1|35->3|35->3|35->3|36->4|65->33|66->34|74->42|74->42|74->42|108->76|109->77|136->104|137->105
                   -- GENERATED --
               */
           

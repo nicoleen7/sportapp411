@@ -1,4 +1,4 @@
 [0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/Users/nicholas/Google Drive/PSU/Semester 7/IST 411/playtest411/conf/logback.xml,/Users/nicholas/Google Drive/PSU/Semester 7/IST 411/playtest411/target/scala-2.12/classes/logback.xml)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/Users/nicholas/Google Drive/PSU/Semester 7/IST 411/playtest411/conf/application.conf,/Users/nicholas/Google Drive/PSU/Semester 7/IST 411/playtest411/target/scala-2.12/classes/application.conf)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/Users/nicholas/Google Drive/PSU/Semester 7/IST 411/playtest411/conf/routes,/Users/nicholas/Google Drive/PSU/Semester 7/IST 411/playtest411/target/scala-2.12/classes/routes)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(C:\Users\super\Google Drive\PSU\Semester 7\IST 411\playtest411\conf\application.conf,C:\Users\super\Google Drive\PSU\Semester 7\IST 411\playtest411\target\scala-2.12\classes\application.conf)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(C:\Users\super\Google Drive\PSU\Semester 7\IST 411\playtest411\conf\logback.xml,C:\Users\super\Google Drive\PSU\Semester 7\IST 411\playtest411\target\scala-2.12\classes\logback.xml)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(C:\Users\super\Google Drive\PSU\Semester 7\IST 411\playtest411\conf\routes,C:\Users\super\Google Drive\PSU\Semester 7\IST 411\playtest411\target\scala-2.12\classes\routes)[0m

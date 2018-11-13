@@ -4,7 +4,7 @@
 		module="playtest411_2.12"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20181111173822"
+		publication="20181113182247"
 	>
 		<description>
 		playtest411
@@ -57,5 +57,6 @@
 		<dependency org="org.hibernate" name="hibernate-core" rev="5.2.5.Final" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-java-jdbc_2.12" rev="2.6.19" conf="compile->default(compile)"/>
 		<dependency org="mysql" name="mysql-connector-java" rev="5.1.18" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-jdbc_2.12" rev="2.6.19" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

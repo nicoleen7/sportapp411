@@ -32,7 +32,7 @@ object Sports extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.Htm
 
 Seq[Any](format.raw/*1.4*/("""
 
-"""),_display_(/*3.2*/main("Welcome to Play")/*3.25*/ {_display_(Seq[Any](format.raw/*3.27*/("""
+"""),_display_(/*3.2*/main("Sports")/*3.16*/ {_display_(Seq[Any](format.raw/*3.18*/("""
     """),format.raw/*4.5*/("""<!-- Here is where we will auto the name of the sport League-->
   <h1>Sport Stats</h1>
 <body>
@@ -65,10 +65,10 @@ Seq[Any](format.raw/*1.4*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Sun Oct 28 23:42:46 EDT 2018
-                  SOURCE: C:/Users/super/Google Drive/PSU/Semester 7/IST 411/playtest411/app/views/Sports.scala.html
-                  HASH: ab7cba910e67a5fbfa948a0ae0b89837a3572fe8
-                  MATRIX: 942->1|1038->3|1068->8|1099->31|1138->33|1170->39|1428->267
+                  DATE: Fri Nov 09 15:24:05 EST 2018
+                  SOURCE: /Users/nicholas/Google Drive/PSU/Semester 7/IST 411/playtest411/app/views/Sports.scala.html
+                  HASH: 327ec6248944c6993aa844ea02ec017e4ac508b9
+                  MATRIX: 942->1|1038->3|1068->8|1090->22|1129->24|1161->30|1419->258
                   LINES: 28->1|33->1|35->3|35->3|35->3|36->4|51->19
                   -- GENERATED --
               */

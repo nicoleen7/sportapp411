@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:C:/Users/super/Google Drive/PSU/Semester 7/IST 411/playtest411/conf/routes
-// @DATE:Tue Nov 13 18:34:44 EST 2018
+// @SOURCE:C:/Users/super/Google Drive/PSU/Semester 7/IST 411/sportapp411/conf/routes
+// @DATE:Sat Dec 01 18:12:16 EST 2018
 
 package router
 
@@ -16,7 +16,7 @@ class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:6
   HomeController_0: controllers.HomeController,
-  // @LINE:18
+  // @LINE:21
   Assets_1: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -25,7 +25,7 @@ class Routes(
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:6
     HomeController_0: controllers.HomeController,
-    // @LINE:18
+    // @LINE:21
     Assets_1: controllers.Assets
   ) = this(errorHandler, HomeController_0, Assets_1, "/")
 
@@ -72,7 +72,7 @@ class Routes(
     )
   )
 
-  // @LINE:7
+  // @LINE:8
   private[this] lazy val controllers_HomeController_index1_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix)))
   )
@@ -86,11 +86,11 @@ class Routes(
       "GET",
       this.prefix + """""",
       """""",
-      Seq()
+      Seq("""nocsrf""")
     )
   )
 
-  // @LINE:8
+  // @LINE:10
   private[this] lazy val controllers_HomeController_addPlayer2_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("players")))
   )
@@ -104,11 +104,11 @@ class Routes(
       "POST",
       this.prefix + """players""",
       """""",
-      Seq()
+      Seq("""nocsrf""")
     )
   )
 
-  // @LINE:9
+  // @LINE:12
   private[this] lazy val controllers_HomeController_getPlayer3_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("players/"), DynamicPart("id", """[^/]+""",true)))
   )
@@ -122,11 +122,11 @@ class Routes(
       "GET",
       this.prefix + """players/""" + "$" + """id<[^/]+>""",
       """""",
-      Seq()
+      Seq("""nocsrf""")
     )
   )
 
-  // @LINE:10
+  // @LINE:14
   private[this] lazy val controllers_HomeController_getPlayers4_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("players")))
   )
@@ -140,11 +140,11 @@ class Routes(
       "GET",
       this.prefix + """players""",
       """""",
-      Seq()
+      Seq("""nocsrf""")
     )
   )
 
-  // @LINE:11
+  // @LINE:16
   private[this] lazy val controllers_HomeController_deletePlayer5_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("deleteplayer/"), DynamicPart("id", """[^/]+""",true)))
   )
@@ -158,11 +158,11 @@ class Routes(
       "GET",
       this.prefix + """deleteplayer/""" + "$" + """id<[^/]+>""",
       """""",
-      Seq()
+      Seq("""nocsrf""")
     )
   )
 
-  // @LINE:13
+  // @LINE:18
   private[this] lazy val controllers_HomeController_editPlayer6_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("editplayer/"), DynamicPart("id", """[^/]+""",true)))
   )
@@ -176,11 +176,11 @@ class Routes(
       "POST",
       this.prefix + """editplayer/""" + "$" + """id<[^/]+>""",
       """""",
-      Seq()
+      Seq("""nocsrf""")
     )
   )
 
-  // @LINE:18
+  // @LINE:21
   private[this] lazy val controllers_Assets_at7_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
@@ -207,43 +207,43 @@ class Routes(
         controllers_HomeController_index0_invoker.call(HomeController_0.index)
       }
   
-    // @LINE:7
+    // @LINE:8
     case controllers_HomeController_index1_route(params@_) =>
       call { 
         controllers_HomeController_index1_invoker.call(HomeController_0.index())
       }
   
-    // @LINE:8
+    // @LINE:10
     case controllers_HomeController_addPlayer2_route(params@_) =>
       call { 
         controllers_HomeController_addPlayer2_invoker.call(HomeController_0.addPlayer())
       }
   
-    // @LINE:9
+    // @LINE:12
     case controllers_HomeController_getPlayer3_route(params@_) =>
       call(params.fromPath[Long]("id", None)) { (id) =>
         controllers_HomeController_getPlayer3_invoker.call(HomeController_0.getPlayer(id))
       }
   
-    // @LINE:10
+    // @LINE:14
     case controllers_HomeController_getPlayers4_route(params@_) =>
       call { 
         controllers_HomeController_getPlayers4_invoker.call(HomeController_0.getPlayers())
       }
   
-    // @LINE:11
+    // @LINE:16
     case controllers_HomeController_deletePlayer5_route(params@_) =>
       call(params.fromPath[Long]("id", None)) { (id) =>
         controllers_HomeController_deletePlayer5_invoker.call(HomeController_0.deletePlayer(id))
       }
   
-    // @LINE:13
+    // @LINE:18
     case controllers_HomeController_editPlayer6_route(params@_) =>
       call(params.fromPath[Long]("id", None)) { (id) =>
         controllers_HomeController_editPlayer6_invoker.call(HomeController_0.editPlayer(id))
       }
   
-    // @LINE:18
+    // @LINE:21
     case controllers_Assets_at7_route(params@_) =>
       call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
         controllers_Assets_at7_invoker.call(Assets_1.at(path, file))

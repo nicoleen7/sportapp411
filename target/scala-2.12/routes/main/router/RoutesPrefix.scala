@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:C:/Users/super/Google Drive/PSU/Semester 7/IST 411/playtest411/conf/routes
-// @DATE:Tue Nov 13 18:34:44 EST 2018
+// @SOURCE:C:/Users/super/Google Drive/PSU/Semester 7/IST 411/sportapp411/conf/routes
+// @DATE:Sat Dec 01 18:12:16 EST 2018
 
 
 package router {

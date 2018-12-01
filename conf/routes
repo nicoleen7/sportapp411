@@ -4,15 +4,18 @@
 
 # An example controller showing a sample home page
 GET     /                           controllers.HomeController.index
++nocsrf
 GET     /                           controllers.HomeController.index()
++nocsrf
 POST    /players                    controllers.HomeController.addPlayer()
++nocsrf
 GET     /players/:id                controllers.HomeController.getPlayer(id:Long)
++nocsrf
 GET     /players                    controllers.HomeController.getPlayers()
++nocsrf
 GET     /deleteplayer/:id           controllers.HomeController.deletePlayer(id:Long)
-
++nocsrf
 POST     /editplayer/:id            controllers.HomeController.editPlayer(id:Long)
-
-#POST    /upload                    controllers.HomeController.upload()
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)

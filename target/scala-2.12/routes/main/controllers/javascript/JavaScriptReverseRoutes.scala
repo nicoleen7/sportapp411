@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:C:/Users/super/Google Drive/PSU/Semester 7/IST 411/playtest411/conf/routes
-// @DATE:Tue Nov 13 18:34:44 EST 2018
+// @SOURCE:C:/Users/super/Google Drive/PSU/Semester 7/IST 411/sportapp411/conf/routes
+// @DATE:Sat Dec 01 18:12:16 EST 2018
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -19,7 +19,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:11
+    // @LINE:16
     def deletePlayer: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.deletePlayer",
       """
@@ -29,7 +29,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:10
+    // @LINE:14
     def getPlayers: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.getPlayers",
       """
@@ -39,7 +39,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:8
+    // @LINE:10
     def addPlayer: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.addPlayer",
       """
@@ -49,7 +49,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:13
+    // @LINE:18
     def editPlayer: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.editPlayer",
       """
@@ -59,7 +59,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:9
+    // @LINE:12
     def getPlayer: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.getPlayer",
       """
@@ -85,7 +85,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:18
+  // @LINE:21
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -93,7 +93,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:18
+    // @LINE:21
     def at: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.at",
       """

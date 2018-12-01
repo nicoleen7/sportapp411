@@ -69,8 +69,8 @@ public class HomeController extends Controller {
     }
     
     @Transactional(readOnly = true)
-    public Result getPlayer(Long id1) {
-        player player = jpaApi.em().find(player.class, id1);
+    public Result getPlayer(Long id) {
+        player player = jpaApi.em().find(player.class, id);
         return ok(toJson(player));
 
     }

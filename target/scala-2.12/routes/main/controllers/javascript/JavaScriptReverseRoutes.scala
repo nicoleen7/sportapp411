@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/super/Google Drive/PSU/Semester 7/IST 411/playtest411/conf/routes
-// @DATE:Tue Nov 13 17:06:52 EST 2018
+// @DATE:Tue Nov 13 18:34:44 EST 2018
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -44,7 +44,7 @@ package controllers.javascript {
       "controllers.HomeController.addPlayer",
       """
         function() {
-          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "player"})
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "players"})
         }
       """
     )
@@ -64,7 +64,7 @@ package controllers.javascript {
       "controllers.HomeController.getPlayer",
       """
         function(id0) {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "player/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[Long]].javascriptUnbind + """)("id", id0))})
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "players/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[Long]].javascriptUnbind + """)("id", id0))})
         }
       """
     )

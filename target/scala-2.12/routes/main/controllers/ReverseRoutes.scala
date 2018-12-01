@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/super/Google Drive/PSU/Semester 7/IST 411/playtest411/conf/routes
-// @DATE:Tue Nov 13 17:06:52 EST 2018
+// @DATE:Tue Nov 13 18:34:44 EST 2018
 
 import play.api.mvc.Call
 
@@ -33,7 +33,7 @@ package controllers {
     // @LINE:8
     def addPlayer(): Call = {
       
-      Call("POST", _prefix + { _defaultPrefix } + "player")
+      Call("POST", _prefix + { _defaultPrefix } + "players")
     }
   
     // @LINE:13
@@ -45,7 +45,7 @@ package controllers {
     // @LINE:9
     def getPlayer(id:Long): Call = {
       
-      Call("GET", _prefix + { _defaultPrefix } + "player/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[Long]].unbind("id", id)))
+      Call("GET", _prefix + { _defaultPrefix } + "players/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[Long]].unbind("id", id)))
     }
   
     // @LINE:6

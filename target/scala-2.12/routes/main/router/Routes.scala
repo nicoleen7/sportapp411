@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/super/Google Drive/PSU/Semester 7/IST 411/playtest411/conf/routes
-// @DATE:Tue Nov 13 17:06:52 EST 2018
+// @DATE:Tue Nov 13 18:34:44 EST 2018
 
 package router
 
@@ -41,8 +41,8 @@ class Routes(
   def documentation = List(
     ("""GET""", this.prefix, """controllers.HomeController.index"""),
     ("""GET""", this.prefix, """controllers.HomeController.index()"""),
-    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """player""", """controllers.HomeController.addPlayer()"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """player/""" + "$" + """id<[^/]+>""", """controllers.HomeController.getPlayer(id:Long)"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """players""", """controllers.HomeController.addPlayer()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """players/""" + "$" + """id<[^/]+>""", """controllers.HomeController.getPlayer(id:Long)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """players""", """controllers.HomeController.getPlayers()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """deleteplayer/""" + "$" + """id<[^/]+>""", """controllers.HomeController.deletePlayer(id:Long)"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """editplayer/""" + "$" + """id<[^/]+>""", """controllers.HomeController.editPlayer(id:Long)"""),
@@ -92,7 +92,7 @@ class Routes(
 
   // @LINE:8
   private[this] lazy val controllers_HomeController_addPlayer2_route = Route("POST",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("player")))
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("players")))
   )
   private[this] lazy val controllers_HomeController_addPlayer2_invoker = createInvoker(
     HomeController_0.addPlayer(),
@@ -102,7 +102,7 @@ class Routes(
       "addPlayer",
       Nil,
       "POST",
-      this.prefix + """player""",
+      this.prefix + """players""",
       """""",
       Seq()
     )
@@ -110,7 +110,7 @@ class Routes(
 
   // @LINE:9
   private[this] lazy val controllers_HomeController_getPlayer3_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("player/"), DynamicPart("id", """[^/]+""",true)))
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("players/"), DynamicPart("id", """[^/]+""",true)))
   )
   private[this] lazy val controllers_HomeController_getPlayer3_invoker = createInvoker(
     HomeController_0.getPlayer(fakeValue[Long]),
@@ -120,7 +120,7 @@ class Routes(
       "getPlayer",
       Seq(classOf[Long]),
       "GET",
-      this.prefix + """player/""" + "$" + """id<[^/]+>""",
+      this.prefix + """players/""" + "$" + """id<[^/]+>""",
       """""",
       Seq()
     )
